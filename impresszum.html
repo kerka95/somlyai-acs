@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresszum | Somlyai Zoltán</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .legal-page { padding-top: 120px; padding-bottom: 80px; min-height: 80vh; }
+        .legal-content h1 { margin-bottom: 2rem; color: var(--clr-primary); }
+        .legal-content h2, .legal-content h3 { margin-top: 2rem; margin-bottom: 1rem; color: white; }
+        .legal-content p, .legal-content ul { color: var(--clr-text-muted); margin-bottom: 1rem; }
+        .legal-content ul { margin-left: 20px; }
+        .legal-content strong { color: var(--clr-text-main); }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Somlyai Zoltán</span>
+                <span class="logo-title">Vissza a főoldalra</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container legal-content">
+            <h1>Impresszum</h1>
+            <p>A 2001. évi CVIII. törvény (Eker tv.) értelmében a szolgáltató alábbi adatai érthetőek el:</p>
+            
+            <h3>Szolgáltató adatai</h3>
+            <ul>
+                <li><strong>Név / Cégnév:</strong> Somlyai Zoltán (Egyéni Vállalkozó)</li>
+                <li><strong>Székhely címe:</strong> 1234 Budapest, Példa utca 1.</li>
+                <li><strong>Adószám:</strong> 12345678-1-11</li>
+                <li><strong>Nyilvántartási szám:</strong> 12345678</li>
+            </ul>
+
+            <h3>Elérhetőségek</h3>
+            <ul>
+                <li><strong>E-mail cím:</strong> <a href="mailto:info@somlyaiacs.hu" class="text-primary">info@somlyaiacs.hu</a></li>
+                <li><strong>Telefonszám:</strong> <a href="tel:+36301234567" class="text-primary">+36 30 123 4567</a></li>
+            </ul>
+
+            <h3>Tárhelyszolgáltató adatai</h3>
+            <ul>
+                <li><strong>Név:</strong> GitHub, Inc.</li>
+                <li><strong>Székhely:</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</li>
+                <li><strong>Weboldal:</strong> https://github.com</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content text-center" style="display:block; text-align:center;">
+            <div class="footer-copyright" style="margin-bottom: 1rem;">
+                &copy; <span id="year"></span> Somlyai Zoltán Ács. Minden jog fenntartva.
+            </div>
+            <div style="font-size: 0.85rem; color: var(--clr-text-muted);">
+                <a href="impresszum.html">Impresszum</a> &nbsp;|&nbsp; 
+                <a href="adatkezeles.html">Adatkezelési Tájékoztató</a> &nbsp;|&nbsp; 
+                <a href="aszf.html">ÁSZF</a> &nbsp;|&nbsp; 
+                <a href="sutik.html">Süti (Cookie) Tájékoztató</a>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

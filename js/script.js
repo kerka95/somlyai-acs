@@ -89,4 +89,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 7. Cookie Banner kezelés
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+    const rejectCookiesBtn = document.getElementById('reject-cookies');
+
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 1500);
+    }
+
+    if(acceptCookiesBtn) {
+        acceptCookiesBtn.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.classList.remove('show');
+            // Ide jöhet az esetleges analitika iniciálása
+        });
+    }
+
+    if(rejectCookiesBtn) {
+        rejectCookiesBtn.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'rejected');
+            cookieBanner.classList.remove('show');
+        });
+    }
 });

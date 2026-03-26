@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süti (Cookie) Tájékoztató | Somlyai Zoltán</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .legal-page {
+            padding-top: 120px;
+            padding-bottom: 80px;
+            min-height: 80vh;
+        }
+
+        .legal-content h1 {
+            margin-bottom: 2rem;
+            color: var(--clr-primary);
+        }
+
+        .legal-content h2,
+        .legal-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .legal-content p,
+        .legal-content ul {
+            color: var(--clr-text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul {
+            margin-left: 20px;
+        }
+
+        .legal-content strong {
+            color: var(--clr-text-main);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Somlyai Zoltán</span>
+                <span class="logo-title">Vissza a főoldalra</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container legal-content">
+            <h1>Süti (Cookie) Tájékoztató</h1>
+            <p>Ez a tájékoztató részletesen bemutatja, hogyan használjuk a sütiket és más hasonló technológiákat Somlyai
+                Zoltán weboldalán.</p>
+
+            <h3>Mi az a süti (cookie)?</h3>
+            <p>A süti (cookie) egy kisméretű szöveges fájl, amelyet a weboldal tárol az Ön számítógépén vagy mobil
+                eszközén, amikor Ön meglátogatja az oldalt. A sütik sokféle funkciót látnak el: emlékeznek a
+                beállításaira, javítják a felhasználói élményt, és segítenek a weboldal üzemeltetőjének megérteni,
+                hogyan használják az oldalt.</p>
+
+            <h3>Milyen sütiket használunk?</h3>
+            <ul>
+                <li><strong>Elengedhetetlen (szükséges) sütik:</strong> Ezek a sütik elengedhetetlenek a weboldal
+                    megfelelő működéséhez. Ezek a sütik nem gyűjtenek Önről olyan információkat, amelyeket marketing
+                    célokra lehetne felhasználni. Ezen sütik közé tartozik a „cookie-consent” süti, amely mindössze
+                    annyit jegyez meg, hogy Ön elfogadta-e az oldal süti-használatát.</li>
+                <li><strong>Statisztikai (analitikai) sütik:</strong> Ha Ön ehhez hozzájárul a Süti sávon (Cookie
+                    Banner), oldalunk külső mérőkódokat (pl. Google Analytics) használhat annak érdekében, hogy névtelen
+                    adatokat gyűjtsön a látogatók számáról, és az oldalon belüli legnépszerűbb tartalmakról. Ezek az
+                    adatok segítenek minket bemutatkozó felületünk fejlesztésében.</li>
+            </ul>
+
+            <h3>Hogyan kezelheti Ön a sütijeit?</h3>
+            <p>Amikor először meglátogatja oldalunkat, egy felugró sáv (Cookie Banner) figyelmezteti a sütik
+                használatára. Ön dönthet úgy, hogy csak a szükséges sütiket engedélyezi, vagy a statisztikai sütik
+                használatába is beleegyezik.</p>
+            <p>Ezenkívül a böngészője beállításaiban bármikor törölheti a mentett sütiket, és beállíthatja, hogy a
+                böngésző egyáltalán ne fogadjon el újakat. Vedd figyelembe, hogy a sütik teljes tiltása esetén
+                előfordulhat, hogy weboldalunk bizonyos funkciói nem működnek tökéletesen.</p>
+
+            <h3>További információk</h3>
+            <p>Az adatvédelmi kérdésekről részletesebben az <a href="adatkezeles.html" class="text-primary">Adatkezelési
+                    Tájékoztató</a> menüpont alatt olvashat.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content text-center" style="display:block; text-align:center;">
+            <div class="footer-copyright" style="margin-bottom: 1rem;">
+                &copy; <span id="year"></span> Somlyai Zoltán Ács. Minden jog fenntartva.
+            </div>
+            <div style="font-size: 0.85rem; color: var(--clr-text-muted);">
+                <a href="impresszum.html">Impresszum</a> &nbsp;|&nbsp;
+                <a href="adatkezeles.html">Adatkezelési Tájékoztató</a> &nbsp;|&nbsp;
+                <a href="aszf.html">ÁSZF</a> &nbsp;|&nbsp;
+                <a href="sutik.html">Süti (Cookie) Tájékoztató</a>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

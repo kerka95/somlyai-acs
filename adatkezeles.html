@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatkezelési Tájékoztató | Somlyai Zoltán</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .legal-page { padding-top: 120px; padding-bottom: 80px; min-height: 80vh; }
+        .legal-content h1 { margin-bottom: 2rem; color: var(--clr-primary); }
+        .legal-content h2, .legal-content h3 { margin-top: 2rem; margin-bottom: 1rem; color: white; }
+        .legal-content p, .legal-content ul { color: var(--clr-text-muted); margin-bottom: 1rem; }
+        .legal-content ul { margin-left: 20px; }
+        .legal-content strong { color: var(--clr-text-main); }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Somlyai Zoltán</span>
+                <span class="logo-title">Vissza a főoldalra</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="container legal-content">
+            <h1>Adatkezelési Tájékoztató</h1>
+            <p>Utolsó frissítés: 2026. március</p>
+            <p>Somlyai Zoltán (a továbbiakban: Adatkezelő) magára nézve kötelezőnek ismeri el a jelen jogi közlemény tartalmát, és kötelezettséget vállal arra, hogy szolgáltatásával kapcsolatos adatkezelése megfelel a jelen tájékoztatóban és a hatályos jogszabályokban (különös tekintettel a GDPR-ra) meghatározott elvárásoknak.</p>
+
+            <h3>1. Az Adatkezelő adatai</h3>
+            <ul>
+                <li><strong>Név:</strong> Somlyai Zoltán</li>
+                <li><strong>E-mail:</strong> info@somlyaiacs.hu</li>
+                <li><strong>Telefonszám:</strong> +36 30 123 4567</li>
+            </ul>
+
+            <h3>2. A kezelt adatok köre és az adatkezelés célja</h3>
+            <p><strong>Kapcsolatfelvétel:</strong> Ha Ön telefonon vagy e-mailben megkeres minket árajánlatkéréssel vagy egyéb kérdéssel, az Ön által megadott személyes adatokat (név, e-mail cím, telefonszám, cím) kizárólag a kapcsolattartás, árajánlat kiállítása és a későbbi szolgáltatás teljesítése céljából kezeljük.</p>
+            <p><strong>Sütik (Cookies):</strong> Az oldal használatának elemzésére statisztikai sütiket használhatunk. Ezzel kapcsolatban a <a href="sutik.html" class="text-primary">Süti Tájékoztatóban</a> talál bővebb információt.</p>
+
+            <h3>3. Az adatkezelés időtartama</h3>
+            <p>A kapcsolatfelvétel során megadott adatokat az árajánlat lejártáig, illetve megrendelés esetén a kapcsolódó számviteli bizonylatok (számlák) törvény által előírt megőrzési idejéig (általában 8 év) tároljuk.</p>
+
+            <h3>4. Adattovábbítás, adatfeldolgozás</h3>
+            <p>Személyes adatait harmadik félnek kizárólag törvényi kötelezettség esetén (pl. NAV), vagy a szolgáltatás elvégzéséhez feltétlenül szükséges alvállalkozók számára adjuk át. Harmadik országba nem továbbítunk adatokat.</p>
+
+            <h3>5. Az Érintettek jogai</h3>
+            <p>Ön jogosult tájékoztatást kérni személyes adatai kezeléséről, kérheti adatai helyesbítését, törlését (ha azt törvény nem zárja ki), zárolását, valamint tiltakozhat személyes adatának kezelése ellen az Adatkezelő megadott elérhetőségein.</p>
+
+            <h3>6. Jogorvoslati lehetőség</h3>
+            <p>Panaszával a Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH) vagy bírósághoz fordulhat.<br>NAIH Címe: 1055 Budapest, Falk Miksa utca 9-11.<br>Web: <a href="https://naih.hu" target="_blank" class="text-primary">naih.hu</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content text-center" style="display:block; text-align:center;">
+            <div class="footer-copyright" style="margin-bottom: 1rem;">
+                &copy; <span id="year"></span> Somlyai Zoltán Ács. Minden jog fenntartva.
+            </div>
+            <div style="font-size: 0.85rem; color: var(--clr-text-muted);">
+                <a href="impresszum.html">Impresszum</a> &nbsp;|&nbsp; 
+                <a href="adatkezeles.html">Adatkezelési Tájékoztató</a> &nbsp;|&nbsp; 
+                <a href="aszf.html">ÁSZF</a> &nbsp;|&nbsp; 
+                <a href="sutik.html">Süti (Cookie) Tájékoztató</a>
+            </div>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
